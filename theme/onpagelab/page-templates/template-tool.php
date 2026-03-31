@@ -115,4 +115,81 @@ get_header(); ?>
     </div>
 </section>
 
+
+<section class="tool-faq section" id="tool-faq" aria-labelledby="tool-faq-title">
+    <div class="container container--narrow">
+        <h2 class="tool-faq__title" id="tool-faq-title">
+            <?php esc_html_e( 'Comment utiliser l\'analyseur SEO ?', 'onpagelab' ); ?>
+        </h2>
+
+        <div class="tool-faq__list" role="list">
+
+            <?php
+            $faqs = [
+                [
+                    'q' => __( 'Comment lancer une analyse SEO ?', 'onpagelab' ),
+                    'a' => __( 'C\'est simple : collez l\'URL complète de la page à auditer dans le champ "URL de la page" (ex : https://votre-site.com/votre-article/), puis cliquez sur "Lancer l\'analyse". Les résultats apparaissent en moins de 30 secondes. Aucune inscription n\'est requise.', 'onpagelab' ),
+                    'open' => true,
+                ],
+                [
+                    'q' => __( 'À quoi sert le champ "Mot-clé cible" ?', 'onpagelab' ),
+                    'a' => __( 'Le mot-clé cible est la requête sur laquelle vous souhaitez positionner votre page dans Google. En le renseignant, l\'analyseur active des vérifications supplémentaires : présence du mot-clé dans le title, le H1, la meta description, la densité dans le contenu et la répartition dans les titres Hn. Sans mot-clé, seule l\'analyse technique et structurelle est effectuée.', 'onpagelab' ),
+                    'open' => false,
+                ],
+                [
+                    'q' => __( 'Que signifie le score SEO affiché ?', 'onpagelab' ),
+                    'a' => __( 'Le score global (de 0 à 100) est calculé à partir de 20 facteurs on-page regroupés en 5 dimensions : technique, sémantique, structure, maillage et balises. Un score supérieur à 80 indique une page bien optimisée. Entre 50 et 80, des améliorations sont recommandées. En dessous de 50, des problèmes critiques sont à corriger en priorité.', 'onpagelab' ),
+                    'open' => false,
+                ],
+                [
+                    'q' => __( 'Comment interpréter les onglets de résultats ?', 'onpagelab' ),
+                    'a' => __( 'Les résultats sont organisés en 5 onglets : "Problèmes" liste les erreurs critiques et avertissements à corriger ; "Technique" détaille les balises (title, meta, canonical, Open Graph…) ; "Sémantique" analyse la densité et la répartition du mot-clé ; "Maillage" vérifie les liens internes, externes et les images ; "Structure Hn" audite l\'arborescence complète H1–H6 selon 5 critères.', 'onpagelab' ),
+                    'open' => false,
+                ],
+                [
+                    'q' => __( 'Puis-je analyser n\'importe quelle URL ?', 'onpagelab' ),
+                    'a' => __( 'L\'outil peut analyser toute URL publiquement accessible, qu\'il s\'agisse d\'un article de blog, d\'une page produit, d\'une landing page ou d\'une homepage. Les pages protégées par un mot de passe, derrière un formulaire de connexion ou bloquées dans le robots.txt ne peuvent pas être crawlées. L\'URL doit commencer par https:// ou http://.', 'onpagelab' ),
+                    'open' => false,
+                ],
+                [
+                    'q' => __( 'L\'outil modifie-t-il mon site ?', 'onpagelab' ),
+                    'a' => __( 'Non. L\'analyseur est entièrement en lecture seule : il visite votre page comme le ferait un moteur de recherche, lit le HTML public et calcule le rapport. Aucune donnée n\'est écrite sur votre serveur, aucun cookie de tracking n\'est déposé. L\'outil est 100 % gratuit et sans inscription.', 'onpagelab' ),
+                    'open' => false,
+                ],
+            ];
+
+            foreach ( $faqs as $i => $faq ) :
+                $item_id = 'tool-faq-item-' . $i;
+                $panel_id = 'tool-faq-panel-' . $i;
+            ?>
+                <div class="tool-faq__item<?php echo $faq['open'] ? ' is-open' : ''; ?>" role="listitem">
+                    <button
+                        class="tool-faq__question"
+                        id="<?php echo esc_attr( $item_id ); ?>"
+                        aria-expanded="<?php echo $faq['open'] ? 'true' : 'false'; ?>"
+                        aria-controls="<?php echo esc_attr( $panel_id ); ?>"
+                    >
+                        <span class="tool-faq__question-text"><?php echo esc_html( $faq['q'] ); ?></span>
+                        <span class="tool-faq__chevron" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="tool-faq__answer"
+                        id="<?php echo esc_attr( $panel_id ); ?>"
+                        role="region"
+                        aria-labelledby="<?php echo esc_attr( $item_id ); ?>"
+                        <?php echo $faq['open'] ? '' : 'hidden'; ?>
+                    >
+                        <p><?php echo esc_html( $faq['a'] ); ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+        </div>
+    </div>
+</section>
+
 <?php get_footer();

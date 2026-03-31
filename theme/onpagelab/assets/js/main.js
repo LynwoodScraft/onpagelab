@@ -200,6 +200,32 @@
   }
 
   // ============================================================
+  // TOOL PAGE FAQ ACCORDION (/outil-seo/)
+  // ============================================================
+  $$('.tool-faq__question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item   = btn.closest('.tool-faq__item');
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Close all items
+      $$('.tool-faq__item').forEach(el => {
+        el.classList.remove('is-open');
+        el.querySelector('.tool-faq__question').setAttribute('aria-expanded', 'false');
+        const a = el.querySelector('.tool-faq__answer');
+        if (a) a.setAttribute('hidden', '');
+      });
+
+      // Open clicked item if it was closed
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.removeAttribute('hidden');
+      }
+    });
+  });
+
+  // ============================================================
   // TOOL FORM (/outil-seo/) → redirect to /analysis/
   // ============================================================
   const toolForm = $('#tool-form');

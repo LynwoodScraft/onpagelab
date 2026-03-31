@@ -829,7 +829,96 @@ html body a.btn--primary:focus {
 .check-card__title { font-size: var(--opl-font-size-sm); font-weight: 600; margin-bottom: var(--opl-space-1); }
 .check-card__desc { font-size: var(--opl-font-size-xs); color: var(--opl-text-secondary); }
 
-/* 19. FOOTER
+/* 19. TOOL FAQ
+   ============================================================ */
+.tool-faq {
+  padding: var(--opl-space-16) 0;
+}
+.tool-faq__title {
+  font-size: var(--opl-font-size-2xl);
+  font-weight: 700;
+  color: var(--opl-text-primary);
+  text-align: center;
+  margin-bottom: var(--opl-space-10);
+}
+.tool-faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--opl-border);
+  border-radius: var(--opl-radius-lg);
+  overflow: hidden;
+}
+.tool-faq__item {
+  border-bottom: 1px solid var(--opl-border);
+}
+.tool-faq__item:last-child {
+  border-bottom: none;
+}
+.tool-faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--opl-space-4);
+  padding: var(--opl-space-5) var(--opl-space-6);
+  background: var(--opl-bg);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--opl-font-size-base);
+  font-weight: 600;
+  color: var(--opl-text-primary);
+  transition: background 0.15s ease;
+}
+.tool-faq__question:hover {
+  background: var(--opl-bg-secondary);
+}
+.tool-faq__item.is-open .tool-faq__question {
+  background: #EFF6FF;
+  color: var(--opl-primary);
+}
+.tool-faq__question-text {
+  flex: 1;
+}
+.tool-faq__chevron {
+  flex-shrink: 0;
+  color: var(--opl-text-secondary);
+  transition: transform 0.25s ease;
+}
+.tool-faq__item.is-open .tool-faq__chevron {
+  transform: rotate(180deg);
+  color: var(--opl-primary);
+}
+.tool-faq__answer {
+  padding: 0 var(--opl-space-6) var(--opl-space-5);
+  background: var(--opl-bg);
+  animation: faq-open 0.2s ease;
+}
+.tool-faq__answer p {
+  font-size: var(--opl-font-size-sm);
+  color: var(--opl-text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+.tool-faq__answer[hidden] {
+  display: none;
+}
+@keyframes faq-open {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 640px) {
+  .tool-faq__question {
+    padding: var(--opl-space-4);
+    font-size: var(--opl-font-size-sm);
+  }
+  .tool-faq__answer {
+    padding: 0 var(--opl-space-4) var(--opl-space-4);
+  }
+}
+
+/* 20. FOOTER
    ============================================================ */
 .footer-cta {
   background: linear-gradient(135deg, var(--opl-primary) 0%, var(--opl-accent) 100%);
