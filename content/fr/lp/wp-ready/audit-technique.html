@@ -1,0 +1,135 @@
+<!--
+=============================================================
+  PAGE : Audit technique SEO on-page automatique
+  URL  : /features/audit-technique-seo/
+  Slug : audit-technique-seo
+  Template : Landing Page Feature
+  Excerpt : Identifiez instantanément les problèmes techniques qui empêchent votre page d'être bien référencée sur Google. Un seul outil, une URL, et tous les facteurs on-page techniques passés en revue en moins de 30 secondes.
+  Champs personnalisés :
+    - opl_feature_icon  → 🛡️
+    - opl_feature_color → blue
+    - opl_lp_cta_text   → Auditer ma page gratuitement
+    - opl_lp_cta_url    → /outil-seo/
+    - hide_title        → 1
+  Meta title : Audit technique SEO on-page automatique — OnPageLab
+  Meta desc  : Détectez en 30 secondes les problèmes techniques qui bloquent votre référencement : title, meta, canonical, robots, H1, Open Graph. Audit gratuit, sans inscription.
+=============================================================
+-->
+
+<h2>Les problèmes techniques on-page qui sabotent votre SEO</h2>
+
+<p>Beaucoup de SEOs optimisent leur contenu mais négligent les signaux techniques qui conditionnent l'indexation et le ranking. Un seul problème peut annuler des semaines d'optimisation éditoriale :</p>
+
+<ul>
+  <li>Une <strong>balise title absente ou trop longue</strong> prive Google d'un signal de pertinence fondamental.</li>
+  <li>Une <strong>meta description manquante</strong> force Google à générer lui-même un extrait peu attractif.</li>
+  <li>Un <strong>noindex involontaire</strong> empêche totalement l'indexation de la page.</li>
+  <li>Une <strong>balise H1 dupliquée</strong> crée une ambiguïté sur le sujet principal de la page.</li>
+  <li>Une <strong>balise canonical mal configurée</strong> peut dévaloriser toute la page au profit d'une autre URL.</li>
+</ul>
+
+<p>OnPageLab vérifie tous ces points automatiquement, sans aucune configuration.</p>
+
+<h2>Les 10 éléments techniques audités</h2>
+
+<h3>1. Code de réponse HTTP</h3>
+<p>OnPageLab vérifie que la page retourne un code 200 OK. Un code 301 non résolu, un 404 ou un 500 est immédiatement signalé comme critique.</p>
+
+<h3>2. Balise title</h3>
+<ul>
+  <li><strong>Présence</strong> : obligatoire pour le référencement.</li>
+  <li><strong>Longueur</strong> : mesurée en <strong>pixels</strong> (pas en caractères). Optimal entre 500 et 590 pixels.</li>
+  <li><strong>Duplication</strong> : alerte si le title est identique à celui d'une autre page.</li>
+  <li><strong>Mot-clé</strong> : présence du terme cible, idéalement en début de titre.</li>
+</ul>
+
+<h3>3. Meta description</h3>
+<ul>
+  <li><strong>Présence</strong> : fortement recommandée pour contrôler l'extrait dans les SERP.</li>
+  <li><strong>Longueur</strong> : optimal entre 430 et 920 pixels (environ 155-160 caractères).</li>
+  <li><strong>Qualité</strong> : détection de méta-descriptions génériques ou trop courtes.</li>
+</ul>
+
+<h3>4. Balise H1</h3>
+<ul>
+  <li><strong>Présence</strong> : chaque page doit avoir exactement un H1.</li>
+  <li><strong>Unicité</strong> : plusieurs H1 sur une même page = signal ambigu pour Google.</li>
+  <li><strong>Contenu</strong> : présence du mot-clé principal dans le H1.</li>
+</ul>
+
+<h3>5. Balise canonique</h3>
+<ul>
+  <li><strong>Auto-référente</strong> : configuration standard et saine.</li>
+  <li><strong>Externe</strong> : la page pointe vers une autre URL comme source canonique.</li>
+  <li><strong>Absente</strong> : absence de décision explicite sur la canonicalisation.</li>
+</ul>
+
+<h3>6. Balise robots meta</h3>
+<ul>
+  <li><code>noindex</code> : la page est exclue de l'indexation — critique si involontaire.</li>
+  <li><code>nofollow</code> : les liens sortants ne sont pas suivis.</li>
+  <li><code>noarchive</code>, <code>noimageindex</code> : directives complémentaires détectées.</li>
+</ul>
+
+<h3>7. Open Graph</h3>
+<ul>
+  <li><code>og:title</code> : présence et correspondance avec le title SEO.</li>
+  <li><code>og:description</code> : présence et longueur.</li>
+  <li><code>og:image</code> : présence d'une image de partage social.</li>
+  <li><code>og:url</code> : cohérence avec l'URL canonique.</li>
+</ul>
+
+<h3>8. Twitter Card</h3>
+<p>Présence de la balise <code>twitter:card</code>, type de card (<code>summary</code>, <code>summary_large_image</code>), image et description Twitter.</p>
+
+<h3>9. Attribut lang de la page</h3>
+<p>Détection de la langue déclarée dans la balise <code>&lt;html lang=""&gt;</code>. Important pour le ciblage géographique et l'accessibilité.</p>
+
+<h3>10. Balise viewport</h3>
+<p>Vérification de la présence de <code>&lt;meta name="viewport"&gt;</code>, indispensable pour la compatibilité mobile et les signaux Core Web Vitals.</p>
+
+<p style="text-align:center;margin:2.5rem 0;">
+  <a href="/outil-seo/" class="btn btn--primary btn--lg">Lancer l'audit technique gratuit →</a>
+</p>
+
+<h2>Questions fréquentes sur l'audit technique SEO</h2>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Quelle est la différence entre le SEO technique on-page et le SEO technique global ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Le SEO technique global concerne l'ensemble d'un site (robots.txt, sitemap, architecture, vitesse). Le SEO technique on-page se concentre sur les signaux présents <em>à l'intérieur d'une page précise</em> : balises meta, structure Hn, attributs d'indexation. OnPageLab est spécialisé dans cette seconde dimension.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Comment savoir si ma page est indexée par Google ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Utilisez l'opérateur <code>site:</code> dans Google (ex : <code>site:monsite.fr/ma-page/</code>). Si la page apparaît, elle est indexée. Pour un diagnostic complet, Google Search Console fournit le statut d'indexation de chaque URL.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">OnPageLab peut-il détecter un noindex mis par erreur ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Oui. Si la page analysée contient <code>&lt;meta name="robots" content="noindex"&gt;</code> ou un header HTTP <code>X-Robots-Tag: noindex</code>, OnPageLab le signale comme problème critique avec une recommandation immédiate.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Que se passe-t-il si ma page n'a pas de meta description ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Google génère automatiquement un extrait à partir du contenu de la page. Cet extrait est souvent peu convaincant et peut varier selon la requête. Rédiger une meta description ciblée permet de contrôler le message dans les SERP et d'améliorer le CTR.</p>
+    </div>
+  </div>
+
+</div>
+
+<h2>Autres modules d'analyse OnPageLab</h2>
+<ul>
+  <li><a href="/outil-seo/analyse-semantique/">Analyse sémantique</a> — Densité de mots-clés et couverture thématique</li>
+  <li><a href="/outil-seo/balises-meta/">Optimisation des balises meta</a> — Prévisualisation SERP et score de balises</li>
+  <li><a href="/outil-seo/maillage-interne/">Analyse du maillage interne</a> — Liens internes et textes d'ancre</li>
+  <li><a href="/outil-seo/structure-hn/">Structure des titres Hn</a> — Hiérarchie et optimisation des headings</li>
+</ul>

@@ -1,0 +1,100 @@
+/*
+Theme Name: OnPageLab
+Theme URI: https://onpagelab.io
+Author: OnPageLab
+Author URI: https://onpagelab.io
+Description: Thème professionnel pour outil d'analyse SEO on-page — technique et sémantique. Bilingual FR/EN.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: onpagelab
+Tags: seo, saas, dark, responsive, custom-header, custom-menu, featured-images, translation-ready
+*/
+
+/* ============================================================
+   DESIGN TOKENS — OnPageLab
+   ============================================================ */
+:root {
+  /* Brand Colors */
+  --opl-primary:        #2563EB;   /* Blue  */
+  --opl-primary-dark:   #1D4ED8;
+  --opl-primary-light:  #EFF6FF;
+  --opl-accent:         #7C3AED;   /* Purple */
+  --opl-accent-light:   #F5F3FF;
+
+  /* Neutral */
+  --opl-dark:           #0F172A;
+  --opl-dark-surface:   #1E293B;
+  --opl-dark-border:    #334155;
+
+  /* Light */
+  --opl-bg:             #FFFFFF;
+  --opl-bg-alt:         #F8FAFC;
+  --opl-bg-section:     #F1F5F9;
+  --opl-text:           #1E293B;
+  --opl-text-secondary: #64748B;
+  --opl-border:         #E2E8F0;
+
+  /* Semantic */
+  --opl-success:        #10B981;
+  --opl-warning:        #F59E0B;
+  --opl-error:          #EF4444;
+  --opl-info:           #3B82F6;
+
+  /* Typography */
+  --opl-font-sans:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --opl-font-mono:      'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --opl-font-size-xs:   0.75rem;
+  --opl-font-size-sm:   0.875rem;
+  --opl-font-size-base: 1rem;
+  --opl-font-size-lg:   1.125rem;
+  --opl-font-size-xl:   1.25rem;
+  --opl-font-size-2xl:  1.5rem;
+  --opl-font-size-3xl:  1.875rem;
+  --opl-font-size-4xl:  2.25rem;
+  --opl-font-size-5xl:  3rem;
+  --opl-font-size-6xl:  3.75rem;
+
+  /* Spacing */
+  --opl-space-1:  0.25rem;
+  --opl-space-2:  0.5rem;
+  --opl-space-3:  0.75rem;
+  --opl-space-4:  1rem;
+  --opl-space-5:  1.25rem;
+  --opl-space-6:  1.5rem;
+  --opl-space-8:  2rem;
+  --opl-space-10: 2.5rem;
+  --opl-space-12: 3rem;
+  --opl-space-16: 4rem;
+  --opl-space-20: 5rem;
+  --opl-space-24: 6rem;
+
+  /* Border Radius */
+  --opl-radius-sm:  0.375rem;
+  --opl-radius:     0.5rem;
+  --opl-radius-md:  0.75rem;
+  --opl-radius-lg:  1rem;
+  --opl-radius-xl:  1.5rem;
+  --opl-radius-full: 9999px;
+
+  /* Shadow */
+  --opl-shadow-sm:  0 1px 2px rgba(0,0,0,0.05);
+  --opl-shadow:     0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+  --opl-shadow-md:  0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+  --opl-shadow-lg:  0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04);
+  --opl-shadow-xl:  0 25px 50px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --opl-transition:     all 0.2s ease;
+  --opl-transition-slow: all 0.35s ease;
+
+  /* Container */
+  --opl-container-sm:   640px;
+  --opl-container-md:   768px;
+  --opl-container-lg:   1024px;
+  --opl-container-xl:   1280px;
+  --opl-container-2xl:  1400px;
+}

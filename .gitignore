@@ -1,0 +1,27 @@
+# WordPress core
+wordpress/
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+
+# Sensible
+wp-config.php
+wp-config-local.php
+.env
+.env.*
+htpasswd.txt
+
+# Dépendances
+node_modules/
+vendor/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo

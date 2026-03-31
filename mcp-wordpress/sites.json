@@ -1,0 +1,14 @@
+{
+  "sites": {
+    "onpagelab-staging": {
+      "url": "https://staging.onpagelab.fr",
+      "user": "paublet",
+      "app_password": "xxxx xxxx xxxx xxxx xxxx xxxx"
+    },
+    "surfcoachtregor": {
+      "url": "https://surfcoachtregor.fr",
+      "user": "votre_identifiant_wp",
+      "app_password": "xxxx xxxx xxxx xxxx xxxx xxxx"
+    }
+  }
+}

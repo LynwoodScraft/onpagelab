@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "wordpress-multisite": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--python", "3.11",
+        "--with", "mcp[cli]",
+        "--with", "httpx",
+        "/Users/pierrewebloom/tasks-claude/wordpress_from_scrath/mcp-wordpress/server.py"
+      ]
+    }
+  }
+}

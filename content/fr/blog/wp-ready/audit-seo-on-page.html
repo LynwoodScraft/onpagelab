@@ -1,0 +1,192 @@
+<!--
+=============================================================
+  ARTICLE : Comment faire un audit SEO on-page : méthode complète en 6 étapes
+  URL     : /blog/audit-seo-on-page/
+  Slug    : audit-seo-on-page
+  Template : Article (single.php)
+
+  CATÉGORIE  : Audit SEO
+  TAGS       : audit seo, seo on-page, analyse seo, optimisation
+
+  EXTRAIT WP :
+  Un audit SEO on-page, c'est l'analyse systématique de tous les facteurs
+  optimisables à l'intérieur d'une page. Méthode en 6 étapes + checklist.
+
+  ── YOAST SEO ───────────────────────────────────────────────
+  Meta title  : Comment faire un audit SEO on-page complet (méthode 2026)
+  Meta desc   : Guide pratique pour réaliser un audit SEO on-page page par
+                page : balises, contenu, structure, maillage. Méthode en
+                6 étapes + checklist + outil gratuit.
+  Canonical   : https://onpagelab.io/blog/audit-seo-on-page/
+  hreflang EN : https://onpagelab.io/en/blog/on-page-seo-audit/
+
+  ── IMAGE À LA UNE ──────────────────────────────────────────
+  Fichier     : hero-audit-seo-on-page.png
+  Alt         : Méthode audit SEO on-page en 6 étapes — OnPageLab
+
+  ── INFOS ÉDITEUR ───────────────────────────────────────────
+  Auteur          : Équipe OnPageLab
+  Date publication: 2026-04-21
+  Temps lecture   : 11 min
+  Schémas         : Article + HowTo + FAQPage
+=============================================================
+-->
+
+<p>Un audit SEO on-page, c'est l'analyse systématique de tous les facteurs optimisables à l'intérieur d'une page pour identifier ce qui freine son référencement. Contrairement à un audit de domaine (qui analyse un site entier), l'audit on-page se concentre sur une page précise.</p>
+
+<p>Dans ce guide, vous apprendrez la différence entre audit on-page et audit technique global, les 6 étapes d'un audit on-page rigoureux, les outils à utiliser (dont des gratuits), les problèmes les plus fréquents et comment les corriger.</p>
+
+
+<h2>Qu'est-ce qu'un audit SEO on-page ?</h2>
+
+<p>Un <strong>audit SEO on-page</strong> est une analyse structurée des éléments présents sur une page web spécifique qui influencent son référencement naturel : balises HTML, contenu, structure des titres, maillage interne, données structurées.</p>
+
+<p>Il se distingue de l'<strong>audit technique de site</strong> — qui analyse la crawlabilité, l'architecture, la vitesse et les redirections de l'ensemble du domaine — et de l'<strong>audit de backlinks</strong> qui évalue le profil de liens entrants. L'audit on-page est la première étape avant tout travail d'optimisation : inutile d'enrichir du contenu si votre page est en noindex.</p>
+
+
+<h2>Étape 1 : Définissez le périmètre d'audit</h2>
+
+<p>Avant de commencer, répondez à trois questions. <strong>Quelle page allez-vous auditer ?</strong> Commencez par les pages stratégiques : celles qui ciblent vos mots-clés prioritaires, qui sont proches du top 10, ou qui ont perdu des positions récemment. <strong>Quel est le mot-clé cible ?</strong> Chaque page devrait cibler un mot-clé principal unique. <strong>Qui est votre concurrent de référence ?</strong> Identifiez la page n°1 sur votre requête cible : elle est votre benchmark pour la longueur, la structure et la couverture sémantique.</p>
+
+<h3>Comment identifier les pages prioritaires à auditer</h3>
+
+<p>Dans <strong>Google Search Console</strong>, triez vos pages par impressions élevées + CTR bas (le title/meta ne donne pas envie de cliquer), position 8–15 (proche du top, l'optimisation on-page peut suffire à passer en top 5), et pages avec baisse de trafic récente (possible sur-optimisation, contenu vieilli ou pénalisation).</p>
+
+
+<h2>Étape 2 : Vérifiez les signaux techniques on-page</h2>
+
+<p>Avant d'analyser le contenu, vérifiez que la page peut être indexée et rankée. Un seul problème technique peut annuler toutes vos autres optimisations.</p>
+
+<h3>2.1. Statut HTTP et indexabilité</h3>
+
+<p>La page doit retourner un <strong>code HTTP 200</strong>. Un code 301 non résolu, un 302, un 404 ou un 500 sont des problèmes bloquants. La page doit être <strong>indexable</strong> : pas de <code>noindex</code> dans les balises meta robots ou dans les headers HTTP. C'est l'erreur la plus grave et la plus fréquente des CMS mal configurés.</p>
+
+<h3>2.2. Balise canonique</h3>
+
+<p>La balise <code>&lt;link rel="canonical"&gt;</code> indique à Google l'URL de référence pour une page. Vérifiez qu'elle pointe vers la propre URL de la page (auto-référente) ou vers une URL de référence choisie, qu'elle n'est pas absente, et qu'elle ne pointe pas par erreur vers une autre page (erreur de copier-coller fréquente avec les CMS).</p>
+
+<h3>2.3. Balise title et meta description</h3>
+
+<p>Vérifiez que le title est présent et unique, que sa longueur est entre 500 et 590 pixels, que la meta description est présente, unique et entre 430 et 920 pixels, et que le mot-clé principal figure dans le title idéalement en début. <a href="/outil-seo/balises-meta/">OnPageLab</a> mesure la longueur en pixels et génère une prévisualisation SERP en temps réel.</p>
+
+<h3>2.4. Open Graph et Twitter Card</h3>
+
+<p>Les balises Open Graph contrôlent l'affichage lors de partages sur les réseaux sociaux. Vérifiez la présence de <code>og:title</code>, <code>og:description</code>, <code>og:image</code> et <code>og:url</code>.</p>
+
+
+<h2>Étape 3 : Analysez la structure des titres Hn</h2>
+
+<p>La structure des titres est le plan de votre contenu. Exportez ou visualisez tous les titres H1 à H6 de la page.</p>
+
+<p>Vérifiez qu'il n'y a qu'<strong>un seul H1</strong> (les page builders placent parfois le titre ET un élément décoratif en H1), que le <strong>H1 contient le mot-clé</strong> (signal de pertinence le plus fort après le title), que la <strong>hiérarchie est logique</strong> (H1→H2→H3 sans sauts de niveau) et que les <strong>H2 couvrent les sous-sujets importants</strong> des pages concurrentes en top 3. → <a href="/outil-seo/structure-hn/">Visualiser la structure Hn de votre page</a></p>
+
+
+<h2>Étape 4 : Auditez le contenu</h2>
+
+<h3>4.1. Longueur et profondeur</h3>
+
+<p>Comptez les mots de votre page et comparez avec les pages en position 1–3 sur votre requête cible. Votre contenu doit être <strong>comparable en profondeur</strong> (pas nécessairement en longueur brute). Attention au <strong>contenu fin</strong> (thin content) : des pages de moins de 300 mots sans valeur unique sont dévalorisées par Google.</p>
+
+<h3>4.2. Densité sémantique</h3>
+
+<p>Vérifiez la densité du mot-clé principal : visez <strong>0,5 % à 2 %</strong> du texte. En dessous, signal de pertinence trop faible. Au-dessus, risque de sur-optimisation. Vérifiez aussi la présence du mot-clé dans le premier paragraphe, dans au moins un H2, dans les attributs alt des images et dans la meta description.</p>
+
+<h3>4.3. Couverture des questions connexes</h3>
+
+<p>Analysez les <strong>People Also Ask</strong> sur Google pour votre mot-clé. Ces questions représentent les interrogations complémentaires des internautes. Si les pages concurrentes y répondent et pas la vôtre, c'est un gap sémantique à combler.</p>
+
+<h3>4.4. Contenu dupliqué</h3>
+
+<p>Vérifiez que le contenu n'est pas dupliqué d'une autre page de votre site ou d'un site tiers. Un simple copier-coller peut entraîner une dévalorisation.</p>
+
+
+<h2>Étape 5 : Analysez le maillage interne</h2>
+
+<p>Le maillage interne est souvent l'aspect le plus négligé de l'audit on-page. Vérifiez le <strong>nombre de liens internes sortants</strong> (une page de contenu devrait pointer vers au moins 3–5 pages internes thématiquement proches), la <strong>qualité des textes d'ancre</strong> (évitez « cliquez ici », visez des ancres descriptives), les <strong>liens brisés</strong> (un lien interne vers une page 404 dégrade l'expérience et gaspille le crawl budget), et les <strong>liens entrants</strong> (une page orpheline sans lien entrant est rarement crawlée). → <a href="/outil-seo/maillage-interne/">Analyser le maillage de votre page</a></p>
+
+
+<h2>Étape 6 : Vérifiez les données structurées</h2>
+
+<p>Les <strong>données structurées</strong> (Schema.org au format JSON-LD) enrichissent l'affichage dans les SERP : rich snippets, FAQ accordéon, étoiles de notation, date de publication.</p>
+
+<table>
+  <thead>
+    <tr><th>Type de page</th><th>Schema recommandé</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Article de blog</td><td>Article + BreadcrumbList</td></tr>
+    <tr><td>FAQ</td><td>FAQPage</td></tr>
+    <tr><td>Page produit</td><td>Product + Review + AggregateRating</td></tr>
+    <tr><td>Service</td><td>Service + LocalBusiness</td></tr>
+    <tr><td>Landing page outil</td><td>SoftwareApplication</td></tr>
+  </tbody>
+</table>
+
+<p>Pour vérifier : <a href="https://search.google.com/test/rich-results" rel="noopener noreferrer" target="_blank">Google Rich Results Test</a> détecte les erreurs de données structurées sur n'importe quelle URL.</p>
+
+
+<h2>Les 10 problèmes on-page les plus fréquents</h2>
+
+<p>En analysant des milliers de pages, voici les erreurs les plus courantes :</p>
+
+<ol>
+  <li><strong>Title absent ou dupliqué</strong> — impact critique sur le ranking</li>
+  <li><strong>Meta description absente</strong> — perte de contrôle sur l'affichage SERP</li>
+  <li><strong>Plusieurs H1 sur la même page</strong> — généralement dû aux page builders</li>
+  <li><strong>Mot-clé absent du H1</strong> — signal de pertinence manquant</li>
+  <li><strong>Noindex involontaire</strong> — la page n'est pas indexée, tout SEO est inutile</li>
+  <li><strong>Liens internes avec ancres génériques</strong> — perte de transmission sémantique</li>
+  <li><strong>Contenu insuffisant</strong> — page trop courte vs les concurrents</li>
+  <li><strong>Images sans attribut alt</strong> — pertinence sémantique et accessibilité perdues</li>
+  <li><strong>Balise canonical mal configurée</strong> — dévalorisation involontaire de la page</li>
+  <li><strong>Données structurées absentes</strong> — opportunités de rich snippets manquées</li>
+</ol>
+
+<p style="text-align:center;margin:2.5rem 0;">
+  <a href="/outil-seo/" class="btn btn--primary btn--lg">Lancer mon audit on-page gratuit →</a>
+</p>
+
+
+<h2>Questions fréquentes sur l'audit SEO on-page</h2>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">À quelle fréquence faut-il réaliser un audit on-page ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Pour les pages stratégiques (top mots-clés), un audit trimestriel est recommandé. Après chaque mise à jour majeure de contenu ou d'algorithme Google (Core Update), vérifiez les pages qui ont perdu des positions.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Combien de temps prend un audit on-page manuel ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Avec un outil comme OnPageLab, 5–10 minutes par page suffisent pour identifier les problèmes et planifier les corrections. Un audit manuel complet sans outil peut prendre 45–60 minutes par page.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Faut-il auditer les pages qui rankent déjà bien ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Oui, régulièrement. Une page bien classée peut perdre des positions si ses concurrents améliorent leur contenu, si l'algorithme évolue, ou si le contenu vieillit. La maintenance SEO on-page est un processus continu.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Un audit on-page est-il différent d'un audit SEO complet ?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Oui. Un audit SEO complet couvre aussi le netlinking, la vitesse de chargement, la structure du site et le profil de backlinks. L'audit on-page se concentre uniquement sur les facteurs présents à l'intérieur d'une page.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<h2>Ressources complémentaires</h2>
+<ul>
+  <li><a href="/blog/seo-on-page-guide-complet/">SEO on-page : guide complet</a></li>
+  <li><a href="/blog/optimisation-balise-title/">Optimiser sa balise title</a></li>
+  <li><a href="/blog/guide-h1-h2-h3/">Guide H1, H2, H3 : structurer son contenu</a></li>
+  <li><a href="/blog/maillage-interne-seo/">Maillage interne SEO : guide complet</a></li>
+  <li><a href="/outil-seo/">Lancer un audit on-page gratuit avec OnPageLab</a></li>
+</ul>
