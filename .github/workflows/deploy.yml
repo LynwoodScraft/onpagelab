@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir:  ./theme/onpagelab/
-          server-dir: /home/cadeaul/staging-onpagelab/wp-content/themes/onpagelab/
+          server-dir: staging-onpagelab/wp-content/themes/onpagelab/
           dangerous-clean-slate: false
           exclude: |
             **/.git*

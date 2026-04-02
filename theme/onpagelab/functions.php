@@ -17,7 +17,7 @@ add_filter( 'wp_is_application_passwords_available', '__return_true' );
 // ============================================================
 // CONSTANTS
 // ============================================================
-define( 'OPL_VERSION',   '1.0.0' );
+define( 'OPL_VERSION',   '1.1.0' );
 define( 'OPL_THEME_DIR', get_template_directory() );
 define( 'OPL_THEME_URI', get_template_directory_uri() );
 
